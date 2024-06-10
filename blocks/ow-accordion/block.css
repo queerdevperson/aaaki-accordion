@@ -1,0 +1,116 @@
+/* .ow-heading button[aria-expanded="true"] {} */
+
+.ow-hidden {
+    display: none;
+}
+
+/* ************** */
+/* Main Container */
+/* ************** */
+
+.ow-accordion-container {
+    position: relative;
+}
+
+.ow-accordion-container:after {
+    content: '';
+    background-color: #0c7afa;
+    box-shadow: 0 0 10px 2px rgba(12, 122, 250, 0.91);
+    display: block;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* ************ */
+/* Item Wrapper */
+/* ************ */
+
+.ow-accordion-item {
+    position: relative;
+}
+
+.ow-accordion-item+.ow-accordion-item:after {
+    content: '';
+    background-color: #0c7afa;
+    box-shadow: 0 0 10px 2px rgba(12, 122, 250, 0.91);
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* **************** */
+/* Heading & Button */
+/* **************** */
+
+.ow-heading {
+    font-family: var(--wp--preset--font-family--jost);
+    font-size: 20px;
+    margin: 0;
+}
+
+.ow-heading button {
+    all: inherit;
+    cursor: pointer;
+    padding: 25px 0;
+    width: 100%;
+}
+
+/* Toggle Icon */
+.toggle-icon {
+    display: inline-block;
+    filter: drop-shadow(0 0 8px rgba(255, 193, 39, 0.82));
+    height: 34px;
+    margin-top: -5px;
+    margin-right: 16px;
+    vertical-align: middle;
+    width: 34px;
+}
+
+.toggle-icon svg {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.toggle-icon .open,
+.ow-open .toggle-icon .closed {
+    display: none;
+}
+
+.toggle-icon .closed,
+.ow-open .toggle-icon .open {
+    display: block;
+}
+
+/* Hover */
+.ow-heading button:hover .ow-heading-inner {
+    text-decoration: underline;
+}
+
+.ow-heading button:hover .toggle-icon {
+    filter: drop-shadow(0 0 8px rgba(12, 122, 250, 0.91));
+}
+
+.ow-heading button:hover .toggle-icon svg path {
+    fill: #0c7afa !important;
+}
+
+.ow-heading button:focus-visible {
+    box-shadow: 0 0 10px 2px rgba(12, 122, 250, 0.91);
+}
+
+/* ************* */
+/* Content Panel */
+/* ************* */
+
+.ow-accordion-panel {
+    margin-top: -25px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+}

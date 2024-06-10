@@ -1,0 +1,20 @@
+{
+    "name": "acf/ow-accordion-panel",
+    "title": "Accordion Panel",
+    "description": "A panel block for the accordion block.",
+    "style": ["file:./block.css"],
+    "category": "formatting",
+    "icon": "id",
+    "keywords": ["accordion", "panel"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "mode": false
+    },
+    "parent": ["acf/ow-accordion"],
+    "version": "1.0.0"
+}

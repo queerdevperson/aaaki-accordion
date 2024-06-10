@@ -1,0 +1,19 @@
+{
+    "name": "acf/ow-accordion",
+    "title": "Accordion",
+    "description": "A custom accordion block that houses panels",
+    "style": ["file:./block.css"],
+    "category": "formatting",
+    "icon": "id",
+    "keywords": ["accordion"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "mode": false
+    },
+    "version": "1.0.0"
+}
