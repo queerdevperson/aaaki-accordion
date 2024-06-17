@@ -11,7 +11,7 @@
  * @param array $context The context provided to the block by the post or it's parent block.
  * 
  * Reference for accessible accordion: https://www.hassellinclusion.com/blog/accessible-accordion-pattern/
- * Reference for horizontal styling: https://mdbootstrap.com/docs/standard/extended/horizontal-accordion/
+ * Reference for parent/child ACF blocks: https://www.advancedcustomfields.com/resources/acf-blocks-using-innerblocks-and-parent-child-relationships/
  * 
  */
 
