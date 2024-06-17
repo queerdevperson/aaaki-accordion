@@ -32,7 +32,8 @@
     position: relative;
 }
 
-.ow-accordion-item+.ow-accordion-item:after {
+.ow-accordion-item + .ow-accordion-item:after,
+.wp-block-acf-ow-accordion-panel + .wp-block-acf-ow-accordion-panel:after  {
     content: '';
     background-color: #0c7afa;
     box-shadow: 0 0 10px 2px rgba(12, 122, 250, 0.91);

@@ -16,5 +16,6 @@
         "mode": false
     },
     "parent": ["acf/ow-accordion"],
+    "usesContext": ["acf/fields"],
     "version": "1.0.0"
 }

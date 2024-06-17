@@ -15,5 +15,8 @@
         "anchor": true,
         "mode": false
     },
+    "providesContext": {
+        "acf/fields": "data"
+    },
     "version": "1.0.0"
 }

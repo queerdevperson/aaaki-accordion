@@ -12,6 +12,7 @@
  * 
  * Reference for accessible accordion: https://www.hassellinclusion.com/blog/accessible-accordion-pattern/
  * Reference for parent/child ACF blocks: https://www.advancedcustomfields.com/resources/acf-blocks-using-innerblocks-and-parent-child-relationships/
+ * Reference for parent/child ACF values: https://www.advancedcustomfields.com/resources/using-context-with-acf-blocks/
  * 
  */
 

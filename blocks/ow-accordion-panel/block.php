@@ -14,7 +14,7 @@
 
 // Load values and assign defaults.
 $panel_title = get_field( 'panel_title' );
-$heading_level = !empty(get_field( 'heading_level' )) ? get_field( 'heading_level' ) : 'h3';
+$heading_level = $context['acf/fields']['heading_level'] ? $context['acf/fields']['heading_level'] : 'h3';
 $default_open = get_field( 'default_open' );
 
 // Support custom "anchor" values.
@@ -61,7 +61,7 @@ $inner_blocks_template = array(
         </<?php echo $heading_level; ?>>
     </div>
     <?php } else { ?>
-        <h3>Panel Title: <?php echo $panel_title; ?></h3>
+        <h3><span class="toggle-icon"><span><?php include('images/star-outline.svg'); ?></span></span> <?php echo $panel_title; ?></h3>
     <?php } ?>
 
     <?php if ( ! $is_preview ) { ?>
