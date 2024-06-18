@@ -94,7 +94,7 @@
                     "h5": "h5",
                     "h6": "h6"
                 },
-                "default_value": false,
+                "default_value": "h3",
                 "return_format": "value",
                 "multiple": 0,
                 "allow_null": 0,
