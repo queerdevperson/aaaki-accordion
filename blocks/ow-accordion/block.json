@@ -3,6 +3,7 @@
     "title": "Accordion",
     "description": "A custom accordion block that houses panels",
     "style": ["file:./block.css"],
+    "viewScript": ["file:./block.js"],
     "category": "formatting",
     "icon": "id",
     "keywords": ["accordion"],
