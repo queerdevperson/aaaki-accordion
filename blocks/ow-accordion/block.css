@@ -8,6 +8,12 @@
 /* Main Container */
 /* ************** */
 
+.wp-block-acf-ow-accordion > .acf-innerblocks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .ow-accordion-container {
     position: relative;
 }
@@ -62,6 +68,10 @@
     width: 100%;
 }
 
+.ow-heading button[aria-expanded="true"] {
+    margin-bottom: 10px;
+}
+
 /* Toggle Icon */
 .toggle-icon {
     display: inline-block;
@@ -114,4 +124,7 @@
     margin-top: -25px;
     padding-bottom: 15px;
     padding-left: 50px;
+}
+.ow-accordion-panel p:first-child {
+    margin-top: 0;
 }

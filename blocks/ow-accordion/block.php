@@ -25,7 +25,7 @@ if ( ! empty( $block['anchor'] ) ) {
 ?>
 
 <?php if ( ! $is_preview ) { ?>
-    <div
+    <ul
         <?php
         echo wp_kses_data(
             get_block_wrapper_attributes(
@@ -45,5 +45,5 @@ if ( ! empty( $block['anchor'] ) ) {
     />
 
 <?php if ( ! $is_preview ) { ?>
-    </div>
+    </ul>
 <?php } ?>

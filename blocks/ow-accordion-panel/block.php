@@ -34,7 +34,7 @@ $inner_blocks_template = array(
 ?>
 
 <?php if ( ! $is_preview ) { ?>
-    <div
+    <li
         <?php
         echo wp_kses_data(
             get_block_wrapper_attributes(
@@ -84,5 +84,5 @@ $inner_blocks_template = array(
     <?php } ?>
 
 <?php if ( ! $is_preview ) { ?>
-    </div>
+    </li>
 <?php } ?>
