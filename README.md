@@ -1,9 +1,18 @@
 # Accessible Accordion Block using ACF
 
-This is an accessbile accordion block that uses ACF Blocks to set up a parent/child block pair. 
+This is a plugin that creates an accessbile accordion block. It requires ACF Pro in order to work.
+
+ACF Blocks are registered via the plugin and set up as a parent/child block pair. 
+
+## To Use
+Download a zip of this repo and use the Upload Plugin button under Add New Plugin. Upload the zipped file.
+
+This is a copy of the accordion used on the Overnight Website and it is encouraged that you change the styles and icons to match your branding. 
+
+I also make no guarantees about this plugin and is currently offered as-is. Open to suggestions, and feel free to report any bugs.
 
 ## Files
 
-- **functions.php** registers the blocks and has the script that will need to be enqueued
+- **ow-accordion.php** registers the plugin, blocks, and block fields.
 - **blocks folder** holds the code for the two blocks
-- **acf-export-accordion-panel.json** is the ACF field group for the panels that you can import
+- **owaaa-acf-fields** is the ACF field groups for the panels that get imported
