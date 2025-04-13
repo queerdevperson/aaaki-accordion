@@ -56,12 +56,12 @@ $inner_blocks_template = array(
                 data-id="<?php echo $anchor; ?>"
                 aria-controls="accordion-panel-<?php echo $anchor; ?>" 
                 aria-expanded="<?php echo $default_open == 'yes' ? 'true' : 'false'; ?>">
-                    <span class="toggle-icon" aria-hidden="true"><span class="closed"><?php include('images/star-outline.svg'); ?></span><span class="open"><?php include('images/star-filled.svg'); ?></span></span><span class="ow-heading-inner"><?php echo $panel_title; ?></span>
+                    <span class="toggle-icon" aria-hidden="true"><span class="closed"><?php include('images/plus.svg'); ?></span><span class="open"><?php include('images/minus.svg'); ?></span></span><span class="ow-heading-inner"><?php echo $panel_title; ?></span>
             </button>
         </<?php echo $heading_level; ?>>
     </div>
     <?php } else { ?>
-        <h3><span class="toggle-icon"><span><?php include('images/star-outline.svg'); ?></span></span> <?php echo $panel_title; ?></h3>
+        <h3><span class="toggle-icon"><span><?php include('images/plus.svg'); ?></span></span> <?php echo $panel_title; ?></h3>
     <?php } ?>
 
     <?php if ( ! $is_preview ) { ?>
