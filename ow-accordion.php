@@ -6,7 +6,7 @@
  * Requires at least: 6.5
  * Requires PHP:      8.0
  * Version:           1.0
- * Text Domain:       ow-aaa
+ * Text Domain:       aaaki
  */
 
 /**
@@ -17,28 +17,28 @@
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 
- function owaaa_block_init() {
+ function aaaki_block_init() {
 	wp_enqueue_script( 'jquery' );
 	
-	register_block_type( __DIR__ . '/blocks/ow-accordion' );
-	register_block_type( __DIR__ . '/blocks/ow-accordion-panel' );
+	register_block_type( __DIR__ . '/blocks/aaaki-accordion' );
+	register_block_type( __DIR__ . '/blocks/aaaki-accordion-panel' );
 }
-add_action( 'init', 'owaaa_block_init' );
+add_action( 'init', 'aaaki_block_init' );
 
-function owaaa_acf_json_load_point( $paths ) {
+function aaaki_acf_json_load_point( $paths ) {
 	// Remove the original path (optional).
 	unset($paths[0]);
 
 	// Append the new path and return it.
-	$paths[] = __DIR__ . '/owaaa-acf-fields';
+	$paths[] = __DIR__ . '/aaaki-acf-fields';
 
 	return $paths;    
 }
-add_filter( 'acf/settings/load_json', 'owaaa_acf_json_load_point' );
+add_filter( 'acf/settings/load_json', 'aaaki_acf_json_load_point' );
 
-new owaaa_acf_group_save();
+new aaaki_acf_group_save();
   
-  class owaaa_acf_group_save {
+  class aaaki_acf_group_save {
     
     // list of field group IDs used in my plugin
     private $groups = array(
@@ -65,10 +65,10 @@ new owaaa_acf_group_save();
       // remove this filter so it will not effect other goups
       remove_filter('acf/settings/save_json',  array($this, 'override_location'), 9999);
       // override save path
-      $path = __DIR__.'/owaaa-acf-fields';
+      $path = __DIR__.'/aaaki-acf-fields';
       return $path;
     } // end public function override_json_location
     
-  } // end class owaaa_acf_group_save
+  } // end class aaaki_acf_group_save
 
 ?>

@@ -1,5 +1,5 @@
 {
-    "name": "acf/ow-accordion",
+    "name": "acf/aaaki-accordion",
     "title": "Accordion",
     "description": "A custom accordion block that houses panels",
     "style": ["file:./block.css"],

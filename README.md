@@ -1,4 +1,4 @@
-# Accessible Accordion Block using ACF
+# Accessible ACF Accordion Block by Kinetic Iris
 
 This is a plugin that creates an accessbile accordion block. It requires ACF Pro in order to work.
 
@@ -13,6 +13,6 @@ I also make no guarantees about this plugin and is currently offered as-is. Open
 
 ## Files
 
-- **ow-accordion.php** registers the plugin, blocks, and block fields.
+- **aaaki-accordion.php** registers the plugin, blocks, and block fields.
 - **blocks folder** holds the code for the two blocks
-- **owaaa-acf-fields** is the ACF field groups for the panels that get imported
+- **aaaki-acf-fields** is the ACF field groups for the panels that get imported

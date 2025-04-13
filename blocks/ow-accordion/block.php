@@ -30,8 +30,8 @@ if ( ! empty( $block['anchor'] ) ) {
         echo wp_kses_data(
             get_block_wrapper_attributes(
                 array(
-                    'id'    => 'ow-accordion-container-' . $anchor,
-                    'class' => 'ow-accordion-container'
+                    'id'    => 'aaaki-accordion-container-' . $anchor,
+                    'class' => 'aaaki-accordion-container'
                 )
             )
         );
@@ -40,8 +40,8 @@ if ( ! empty( $block['anchor'] ) ) {
 <?php } ?>
     
     <InnerBlocks 
-        allowedBlocks="<?php echo esc_attr( wp_json_encode( array( 'acf/ow-accordion-panel' ) ) );?>" 
-        template="<?php echo esc_attr( wp_json_encode( array(array( 'acf/ow-accordion-panel' )) ) );?>" 
+        allowedBlocks="<?php echo esc_attr( wp_json_encode( array( 'acf/aaaki-accordion-panel' ) ) );?>" 
+        template="<?php echo esc_attr( wp_json_encode( array(array( 'acf/aaaki-accordion-panel' )) ) );?>" 
     />
 
 <?php if ( ! $is_preview ) { ?>

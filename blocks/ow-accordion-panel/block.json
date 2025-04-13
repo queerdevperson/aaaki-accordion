@@ -1,5 +1,5 @@
 {
-    "name": "acf/ow-accordion-panel",
+    "name": "acf/aaaki-accordion-panel",
     "title": "Accordion Panel",
     "description": "A panel block for the accordion block.",
     "style": ["file:./block.css"],
@@ -15,7 +15,7 @@
         "anchor": true,
         "mode": false
     },
-    "parent": ["acf/ow-accordion"],
+    "parent": ["acf/aaaki-accordion"],
     "usesContext": ["acf/fields"],
     "version": "1.0.0"
 }

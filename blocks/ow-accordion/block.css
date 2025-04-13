@@ -1,6 +1,6 @@
-/* .ow-heading button[aria-expanded="true"] {} */
+/* .aaaki-heading button[aria-expanded="true"] {} */
 
-.ow-hidden {
+.aaaki-hidden {
     display: none;
 }
 
@@ -8,13 +8,13 @@
 /* Main Container */
 /* ************** */
 
-.wp-block-acf-ow-accordion > .acf-innerblocks-container {
+.wp-block-acf-aaaki-accordion > .acf-innerblocks-container {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.ow-accordion-container {
+.aaaki-accordion-container {
     padding-left: 0;
     position: relative;
 }
@@ -23,13 +23,13 @@
 /* Item Wrapper */
 /* ************ */
 
-.ow-accordion-item {
+.aaaki-accordion-item {
     border: 1px solid #d5d8dc;
     list-style: none;
     position: relative;
 }
 
-.ow-accordion-item + .ow-accordion-item {
+.aaaki-accordion-item + .aaaki-accordion-item {
     margin-top: 0;
 }
 
@@ -37,20 +37,20 @@
 /* Heading & Button */
 /* **************** */
 
-.ow-heading {
+.aaaki-heading {
     font-family: var(--wp--preset--font-family--montserrat);
     font-size: 16px;
     margin: 0;
 }
 
-.ow-heading button {
+.aaaki-heading button {
     all: inherit;
     cursor: pointer;
     padding: 15px 10px;
     width: calc(100% - 20px);
 }
 
-.ow-heading button[aria-expanded="true"] {
+.aaaki-heading button[aria-expanded="true"] {
     margin-bottom: 10px;
 }
 
@@ -71,25 +71,25 @@
 }
 
 .toggle-icon .open,
-.ow-open .toggle-icon .closed {
+.aaaki-open .toggle-icon .closed {
     display: none;
 }
 
 .toggle-icon .closed,
-.ow-open .toggle-icon .open {
+.aaaki-open .toggle-icon .open {
     display: block;
 }
 
 /* Hover */
-.ow-heading button:hover .ow-heading-inner {
+.aaaki-heading button:hover .aaaki-heading-inner {
     color: var(--wp--preset--color--secondary);
 }
 
-.ow-heading button:hover .toggle-icon svg path {
+.aaaki-heading button:hover .toggle-icon svg path {
     fill: var(--wp--preset--color--secondary) !important;
 }
 
-.ow-heading button:focus-visible {
+.aaaki-heading button:focus-visible {
     box-shadow: 0 0 10px 2px rgba(12, 12, 12, 0.5);
 }
 
@@ -97,11 +97,11 @@
 /* Content Panel */
 /* ************* */
 
-.ow-accordion-panel {
+.aaaki-accordion-panel {
     padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
 }
-.ow-accordion-panel p:first-child {
+.aaaki-accordion-panel p:first-child {
     margin-top: 0;
 }

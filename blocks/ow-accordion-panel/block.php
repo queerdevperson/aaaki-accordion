@@ -40,7 +40,7 @@ $inner_blocks_template = array(
             get_block_wrapper_attributes(
                 array(
                     'id'    => 'accordion-item-' . $anchor,
-                    'class' => 'ow-accordion-item' . ( $default_open == 'yes' ? ' ow-open' : '' ),
+                    'class' => 'aaaki-accordion-item' . ( $default_open == 'yes' ? ' aaaki-open' : '' ),
                 )
             )
         );
@@ -49,14 +49,14 @@ $inner_blocks_template = array(
 <?php } ?>
 
 <?php if ( ! $is_preview ) { ?>
-    <div class="ow-panel-title">
-        <<?php echo $heading_level; ?> class="ow-heading">
+    <div class="aaaki-panel-title">
+        <<?php echo $heading_level; ?> class="aaaki-heading">
             <button 
                 id="button-<?php echo $anchor; ?>" 
                 data-id="<?php echo $anchor; ?>"
                 aria-controls="accordion-panel-<?php echo $anchor; ?>" 
                 aria-expanded="<?php echo $default_open == 'yes' ? 'true' : 'false'; ?>">
-                    <span class="toggle-icon" aria-hidden="true"><span class="closed"><?php include('images/plus.svg'); ?></span><span class="open"><?php include('images/minus.svg'); ?></span></span><span class="ow-heading-inner"><?php echo $panel_title; ?></span>
+                    <span class="toggle-icon" aria-hidden="true"><span class="closed"><?php include('images/plus.svg'); ?></span><span class="open"><?php include('images/minus.svg'); ?></span></span><span class="aaaki-heading-inner"><?php echo $panel_title; ?></span>
             </button>
         </<?php echo $heading_level; ?>>
     </div>
@@ -69,13 +69,13 @@ $inner_blocks_template = array(
             role="region"
             id="accordion-panel-<?php echo $anchor; ?>" 
             aria-labelledby="button-<?php echo $anchor; ?>" 
-            class="ow-accordion-panel <?php echo $default_open == 'yes' ? '' : 'ow-hidden'; ?>"
+            class="aaaki-accordion-panel <?php echo $default_open == 'yes' ? '' : 'aaaki-hidden'; ?>"
         >
         
     <?php } ?>
 
         <InnerBlocks 
-            class="ow-panel-content"
+            class="aaaki-panel-content"
             template="<?php echo esc_attr( wp_json_encode( $inner_blocks_template ) ); ?>" 
         />
 
