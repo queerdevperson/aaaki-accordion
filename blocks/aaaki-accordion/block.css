@@ -57,10 +57,11 @@
 /* Toggle Icon */
 .toggle-icon {
     display: inline-block;
-    height: 17px;
+    height: 21px;
     margin-right: 13px;
     vertical-align: middle;
     width: 15px;
+    margin-top: -5px;
 }
 
 .toggle-icon span {
